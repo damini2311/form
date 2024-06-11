@@ -1,0 +1,207 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.container-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.info-section {
+  text-align: center;
+}
+
+.logo {
+  width: 100px;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 1em;
+  margin-bottom: 20px;
+}
+
+.services-section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  justify-content: center;
+  width: 100%;
+}
+
+.text-card {
+  background-color: #003366;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.form-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.form-group {
+  margin-bottom: 10px;
+}
+
+input {
+  padding: 10px;
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #ff7e00;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.error {
+  color: red;
+}
+
+.message {
+  color: green;
+}
+
+@media (min-width: 720px) {
+  .container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .container-section,
+  .services-section {
+    width: 45%;
+  }
+}
+
+@media (max-width: 720px) {
+  .container-section,
+  .services-section {
+    width: 100%;
+  }
+
+  .services-section {
+    grid-template-columns: 1fr;
+  }
+
+  .text-card {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 10px;
+  }
+
+  .logo {
+    width: 80px;
+  }
+
+  h1 {
+    font-size: 1.5em;
+  }
+
+  .text-card {
+    width: 100%;
+  }
+
+  input {
+    width: 200px;
+  }
+
+  button {
+    width: 100%;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 720px) {
+  .container {
+    padding: 15px;
+  }
+
+  .logo {
+    width: 90px;
+  }
+
+  h1 {
+    font-size: 1.75em;
+  }
+
+  input {
+    width: 250px;
+  }
+
+  button {
+    width: 250px;
+  }
+}
+
+/* For screens between 721px and 1080px */
+@media (min-width: 721px) and (max-width: 1080px) {
+  .container {
+    padding: 20px;
+  }
+
+  .logo {
+    width: 100px;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  input {
+    width: 300px;
+  }
+
+  button {
+    width: 300px;
+  }
+}
+
+/* For screens wider than 1080px */
+@media (min-width: 1081px) {
+  .container {
+    padding: 25px;
+  }
+
+  .logo {
+    width: 120px;
+  }
+
+  h1 {
+    font-size: 2.5em;
+  }
+
+  input {
+    width: 350px;
+  }
+
+  button {
+    width: 350px;
+  }
+}
